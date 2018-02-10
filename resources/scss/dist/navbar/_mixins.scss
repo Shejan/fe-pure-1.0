@@ -1,0 +1,16 @@
+
+// MIXINS
+//===================================
+
+// Transition
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	transition: $args;
+}
+
+// Transform
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-ms-transform: $args;
+	transform: $args;
+}

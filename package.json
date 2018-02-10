@@ -21,6 +21,8 @@
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^5.0.1",
     "gulp-imagemin": "^4.0.0",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
@@ -30,14 +32,13 @@
     "gulp-sourcemaps": "^2.6.2",
     "gulp-uglify": "^3.0.0",
     "gulp-wait": "0.0.2",
+    "gulp-wrap": "^0.13.0",
+    "handlebars": "^4.0.11",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.1",
     "jquery": "^3.3.0",
     "popper.js": "^1.13.0",
     "postcss": "^6.0.16",
-    "postcss-short": "^4.1.0",
-    "purecss-sass": "^1.0.0",
-    "static-server": "^3.0.0",
     "postcss-alias": "^2.0.0",
     "postcss-all-link-colors": "^2.0.0",
     "postcss-center": "^1.1.0",
@@ -47,7 +48,10 @@
     "postcss-crip": "^2.0.1",
     "postcss-font-magician": "^2.1.0",
     "postcss-position": "^1.0.0",
+    "postcss-short": "^4.1.0",
     "postcss-size": "^2.0.0",
-    "postcss-triangle": "^2.0.0"
+    "postcss-triangle": "^2.0.0",
+    "purecss-sass": "^1.0.0",
+    "static-server": "^3.0.0"
   }
 }

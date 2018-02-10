@@ -24,6 +24,10 @@ var clearfix = require('postcss-clearfix');
 var position = require('postcss-position');
 var size = require('postcss-size');
 var colorShort = require('postcss-color-short');
+var handlebars = require('gulp-handlebars');
+var handlebarsLib = require('handlebars');
+var declare = require('gulp-declare');
+var wrap = require('gulp-wrap');
 
 var info = autoprefixer().info();
 console.log(info);
@@ -34,6 +38,8 @@ var STYLE_PATH = 'public/css';
 var JS_PATH = 'public/js';
 var IMG_PATH = 'public/images';
 var FONT_PATH = 'public/fonts';
+var TEMPLATE_PATH = 'templates/**/*.hbs';
+var PUBLIC_PATH = 'public';
 
 // Styles
 
@@ -84,7 +90,7 @@ gulp.task('scripts', function(){
    		console.log(err);
    		this.emit('end');
      }))
-	.pipe(concat('main.js'))
+	.pipe(concat('main.min.js'))
 	//.pipe(uglify())
 	.pipe(gulp.dest(JS_PATH))
 	.pipe(livereload());
@@ -130,6 +136,21 @@ gulp.task('images',function(){
    	.pipe(gulp.dest(IMG_PATH))
 });
 
+// Templating
+gulp.task('templates',function(){
+  return gulp.src(TEMPLATE_PATH)
+  .pipe(handlebars({
+      handlebars: handlebarsLib
+  }))
+  .pipe(wrap('Handlebars.template(<%= contents %>)'))
+  .pipe(declare({
+        namespace: 'templates',
+        noRedeclare: true
+    }))
+  .pipe(concat('templates.js'))
+  .pipe(gulp.dest(JS_PATH))
+  .pipe(livereload());
+});
 // Fonts
 
 // gulp.task('BootstrpFonts', function(){
@@ -180,4 +201,5 @@ gulp.task('watch', ['default'], function(){
   gulp.watch(P_SCSS_PATH + '/**/*.scss', ['PureStyle']).on('change', livereload.changed);
 	gulp.watch(IMG_PATH, ['images']).on('change', livereload.changed);
 	gulp.watch('public/*.html').on('change', livereload.changed);
+  gulp.watch('templates/**/*.hbs').on('change', livereload.changed);
 });

@@ -1,0 +1,140 @@
+
+/* DROPDOWN EXTENSION */
+// This extension provides the use of dropdowns in navigation.
+
+// DROPDOWN
+.nav-dropdown{
+	min-width: 180px;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	list-style: none;
+	z-index: 98;
+	white-space: nowrap;
+	
+	.navigation-portrait &{
+		width: 100%;
+		position: static;
+		left: 0;
+	}
+	& &{
+		left: 100%;
+	}
+	.nav-menu > li > &{
+		border-top: solid 1px $border-color;
+	}
+	
+	// Dropdown items
+	> li{
+		width: 100%;
+		float: left;
+		clear: both;
+		position: relative;
+		text-align: left;
+		
+		> a{
+			width: 100%;
+			padding: 16px 20px;
+			display: inline-block;
+			text-decoration: none;
+			float: left;
+			font-size: 13px;
+			color: $dropdown-font-color;
+			background-color: $submenu-background-color;
+			@include transition(color .3s, background .3s);
+		}
+		
+		&:hover > a,
+		&.focus > a{
+			color: $dropdown-font-color-hover;
+		}
+	}
+	
+	// Dropdown to left
+	&.nav-dropdown-left{
+		right: 0;
+	}
+	& > li > .nav-dropdown-left{
+		left: auto;
+		right: 100%;
+	}
+	.navigation-landscape &.nav-dropdown-left > li > a{
+		text-align: right;
+	}
+	
+	// Dropdown indentation (until the fifth level)
+	.navigation-portrait &{
+		> li  > a{
+			padding: 12px 20px 12px 30px;
+		}
+		> li  > ul > li  > a{
+			padding-left: 50px;
+		}
+		> li  > ul > li  > ul > li  > a{
+			padding-left: 70px;
+		}
+		> li  > ul > li  > ul > li  > ul > li  > a{
+			padding-left: 90px;
+		}
+		> li  > ul > li  > ul > li  > ul > li  > ul > li  > a{
+			padding-left: 110px;
+		}
+	}
+	
+	// Submenu indicators
+	.submenu-indicator{
+		right: 15px;	
+		top: 16px;
+		position: absolute;
+		
+		.navigation-portrait &{
+			right: 0;
+			top: 0;
+		}
+		
+		& .submenu-indicator-chevron{
+			@include transform(rotate(-45deg));
+		}
+		.navigation-portrait & .submenu-indicator-chevron{
+			@include transform(rotate(45deg));
+		}
+	}
+	& > li:hover > a .submenu-indicator-chevron,
+	& > .focus > a .submenu-indicator-chevron{
+		border-color: transparent $dropdown-font-color-hover $dropdown-font-color-hover transparent;
+	}
+	
+	// Submenu indicator to left
+	.navigation-landscape &.nav-dropdown-left .submenu-indicator{
+		left: 10px;	
+		
+		.submenu-indicator-chevron{
+			@include transform(rotate(135deg));
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

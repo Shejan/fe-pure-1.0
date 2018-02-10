@@ -1,0 +1,17 @@
+
+/* NAVIGATION TEXT */
+//===================================
+.nav-text{
+	margin: 25px 15px;
+	display: inline-block;
+	color: $font-color;
+	font-size: 14px;
+	
+	.navigation-portrait &{
+		width: calc(100% - 52px);
+		margin: 12px 26px 0;
+	}
+	.navigation-portrait & + ul{
+		margin-top: 15px;
+	}
+}

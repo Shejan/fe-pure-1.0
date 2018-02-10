@@ -1,0 +1,28 @@
+
+/* BORDER BOTTOM SKIN */
+
+$border-bottom-color: $font-color-hover;
+
+.navigation-landscape{
+	.nav-menu:not(.nav-menu-social){
+		> li:not(.icon-item){
+			> a{
+				height: 66;
+				padding: 26px 15px 22px;
+				border-bottom: solid 4px transparent;
+				@include transition(color .3s, background .3s, border .3s);
+			}
+			
+			&:hover,
+			&.active,
+			&.focus{
+				> a{
+					border-bottom-color: $border-bottom-color;
+				}
+			}
+		}
+	}
+}
+
+
+

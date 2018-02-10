@@ -1,0 +1,81 @@
+
+// COLOR PALETTE
+// ================================
+$white:				#ffffff;
+$gray:				#70798b;
+$gray-light:		#f0f0f0;
+$gray-lighter:		#fbfcfd;
+$gray-lightest:		#fdfdfd;
+
+$blue:				#3BAFDA;
+$green:				#8CC152;
+$red:				#B03060;
+$orange:			#FE9A76;
+$yellow:			#F6BB42;
+$purple:			#967ADC;
+
+
+// ORGANIZING THE COLORS
+//===================================
+$background-color: 		$white;
+$font-color:			$gray;
+$font-color-hover:		$green;
+$border-color:			$gray-light;
+
+
+// SETTING COLORS
+//===================================
+
+// Navbar
+$navbar-background-color: 					$background-color;
+
+// Brand
+$brand-font-color: 							$font-color;
+
+// Toggle button
+$toggle-icon-color: 						$font-color;
+
+// Offcanvas panel
+$offcanvas-background-color: 				$background-color;
+$offcanvas-close-icon-color: 				$font-color;
+
+// Menu item
+$menu-item-font-color: 						$font-color;
+$menu-item-font-color-hover: 				$font-color-hover;
+
+// Search button
+$search-button-background-color:			$gray-lighter;
+$search-button-icon-color:					$font-color;
+$search-button-icon-color-hover: 			$font-color-hover;
+
+// Search panel
+$search-panel-background-color: 			$background-color;
+$search-panel-font-color:					$font-color;
+$search-panel-close-icon-color: 			$font-color;
+
+// Button
+$button-background-color: 					$green;
+$button-font-color: 						$white;
+
+// Submenu
+$submenu-background-color: 					$gray-lightest;
+
+// Dropdown
+$dropdown-font-color: 						$font-color;
+$dropdown-font-color-hover: 				$font-color-hover; // used for "active" state too
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

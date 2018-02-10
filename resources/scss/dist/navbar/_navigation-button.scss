@@ -1,0 +1,26 @@
+
+/* NAVIGATION BUTTON */
+//===================================
+.nav-button{
+	margin: 18px 15px 0;
+	padding: 8px 14px;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	background-color: $button-background-color;
+	@include transition(opacity .3s);
+	
+	&:hover,
+	&:focus{
+		color: #fff;
+		text-decoration: none;
+		opacity: 0.85;
+	}
+	.navigation-portrait &{
+		width: calc(100% - 52px);
+		margin: 17px 26px;
+	}
+}
