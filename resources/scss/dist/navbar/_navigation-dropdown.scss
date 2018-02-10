@@ -22,7 +22,7 @@
 		left: 100%;
 	}
 	.nav-menu > li > &{
-		border-top: solid 1px $border-color;
+		border-top: solid 1px $blue-cerulean;
 	}
 	
 	// Dropdown items
@@ -32,6 +32,8 @@
 		clear: both;
 		position: relative;
 		text-align: left;
+		border-bottom:1px solid;
+		border-color:rgba($blue-cerulean,0.3);
 		
 		> a{
 			width: 100%;
@@ -40,14 +42,15 @@
 			text-decoration: none;
 			float: left;
 			font-size: 13px;
-			color: $dropdown-font-color;
-			background-color: $submenu-background-color;
+			font-weight:600;
+			color: $black;
+			background-color: $sunrise;
 			@include transition(color .3s, background .3s);
 		}
 		
 		&:hover > a,
 		&.focus > a{
-			color: $dropdown-font-color-hover;
+			color: $blue-cerulean;
 		}
 	}
 	
