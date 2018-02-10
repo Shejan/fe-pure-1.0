@@ -1,0 +1,53 @@
+{
+  "name": "fe-pure-1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shejan/fe-pure-1.0.git"
+  },
+  "author": "ras870110",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shejan/fe-pure-1.0/issues"
+  },
+  "homepage": "https://github.com/Shejan/fe-pure-1.0#readme",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-wait": "0.0.2",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1",
+    "jquery": "^3.3.0",
+    "popper.js": "^1.13.0",
+    "postcss": "^6.0.16",
+    "postcss-short": "^4.1.0",
+    "purecss-sass": "^1.0.0",
+    "static-server": "^3.0.0",
+    "postcss-alias": "^2.0.0",
+    "postcss-all-link-colors": "^2.0.0",
+    "postcss-center": "^1.1.0",
+    "postcss-circle": "^1.1.0",
+    "postcss-clearfix": "^2.0.1",
+    "postcss-color-short": "^0.2.4",
+    "postcss-crip": "^2.0.1",
+    "postcss-font-magician": "^2.1.0",
+    "postcss-position": "^1.0.0",
+    "postcss-size": "^2.0.0",
+    "postcss-triangle": "^2.0.0"
+  }
+}

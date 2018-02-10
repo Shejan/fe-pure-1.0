@@ -1,0 +1,13 @@
+@for $i from 0 through 5{
+	 .m-#{$i}{m: $spacer * $i;}
+	 .mt-#{$i}{mt: $spacer * $i;}
+	 .mr-#{$i}{mr: $spacer * $i;}
+	 .mb-#{$i}{mb: $spacer * $i;}
+	 .ml-#{$i}{ml: $spacer * $i;}
+	 .p-#{$i}{p: $spacer * $i;}	
+	 .pt-#{$i}{pt: $spacer * $i;}
+	 .pr-#{$i}{pr: $spacer * $i;}
+	 .pb-#{$i}{pb: $spacer * $i;}
+	 .pl-#{$i}{pl: $spacer * $i;}				 
+}
+
