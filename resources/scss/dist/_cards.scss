@@ -1,7 +1,28 @@
 .card{
+	position:relative;
 	display:block;
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 	.card-body{
 		padding: 15px;
 	}
+	.card-img{
+		position: relative;
+		overflow:hidden;
+		.card-img-caption{
+			position:absolute;
+			left:0;
+			bottom:0;
+			pt:5px;
+			pr:10px;
+			pl:10px;
+			pb:5px;
+			color:$white;
+			overflow:hidden;
+			background: linear-gradient(to bottom, rgba(76,76,76,0.03) 0%,rgba(76,76,76,0.35) 35%,rgba(19,19,19,0.95) 100%); 
+			a,h1,h2,h3,h4,h5,h6{
+				color:$white;
+			}
+		}
+	}
+	
 }

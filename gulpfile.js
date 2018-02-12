@@ -177,17 +177,17 @@ gulp.task('templates',function(){
 //   .pipe(gulp.dest(STYLE_PATH))
 // });
 
-// gulp.task('FontAwesomeFonts', function() {
-//     return gulp.src(FONTAWESOME_FONT_PATH + '/fontawesome-webfont.*')
-//     	.pipe(plumber(function(err){
-// 	      console.log('Font Aweosme Icon Font task Task Error');
-// 	      console.log(err);
-// 	      this.emit('end');
-// 	     }))
-//         .pipe(gulp.dest(FONT_PATH + '/fontawesome'));
-// }); 
+gulp.task('fonts', function() {
+     return gulp.src('resources/fonts/*.ttf')
+     	.pipe(plumber(function(err){
+ 	      console.log('Font Aweosme Icon Font task Task Error');
+ 	      console.log(err);
+ 	      this.emit('end');
+ 	     }))
+      .pipe(gulp.dest(FONT_PATH));
+}); 
 
-gulp.task('default',['styles','scripts','PureStyle','images'], function(){
+gulp.task('default',['styles','scripts','PureStyle','images','fonts'], function(){
 	console.log('Default task running');
 });
 

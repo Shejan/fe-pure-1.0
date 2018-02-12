@@ -1,3 +1,17 @@
+@font-face {
+   font-family: "Asar Regular", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   src: local("asar-regular"), local("asar-regular"),
+        url("../fonts/asar-regular.ttf")   format("truetype")
+}
+@font-face {
+   font-family: "PT Sans Regular";
+   font-style: normal;
+   font-weight: 400;
+   src: local("pt-sans-regular"), local("pt-sans-regular"),
+        url("../fonts/pt-sans-regular.ttf")   format("truetype")
+}
 // Colors
 
 // Default
@@ -57,4 +71,7 @@ $brown-dark: #2E2004;
 $honeysuckle: #fcc875;
 $faded-pink: #E38B75;
 
+$heading-font: "PT Sans Regular";
+$body-font: "Asar Regular";
 $spacer: 0.5rem;
+$heading-size: 40px;

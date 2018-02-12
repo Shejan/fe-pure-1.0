@@ -1,0 +1,23 @@
+
+$i:6;
+@while $i > 0{
+	h#{$i}{
+		font-size: $heading-size - ($i*4);
+		$i: $i - 1;
+	}
+} 
+@for $i from 1 through 6{
+	h#{$i}{
+		mt:8px;
+		mb:8px;
+		font-family: $heading-font;
+	}
+}
+p{
+	font-family: $body-font;
+	font-size:1.1rem;
+
+}
+  
+
+  
